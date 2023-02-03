@@ -125,6 +125,19 @@ export const updateTrayMenu = async () => {
     )
     menu.append(
         new MenuItem({
+            label: '在线状态',
+            submenu: [
+                    type: 'radio',
+                    label: '在线',
+            ],
+            submenu: [
+                    type: 'radio',
+                    label: 'Q我吧',
+            ],
+        }),
+    )
+    menu.append(
+        new MenuItem({
             label: '显示菜单栏',
             type: 'checkbox',
             checked: getConfig().showAppMenu,
