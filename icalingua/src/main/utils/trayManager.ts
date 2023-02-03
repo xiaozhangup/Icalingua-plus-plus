@@ -127,12 +127,30 @@ export const updateTrayMenu = async () => {
         new MenuItem({
             label: '在线状态',
             submenu: [
+                {
                     type: 'radio',
                     label: '在线',
-            ],
-            submenu: [
+                },
+                {
+                    type: 'radio',
+                    label: '离开',
+                },
+                {
+                    type: 'radio',
+                    label: '隐身',
+                },
+                {
+                    type: 'radio',
+                    label: '忙碌',
+                },
+                {
                     type: 'radio',
                     label: 'Q我吧',
+                },
+                {
+                    type: 'radio',
+                    label: '请勿打扰',
+                },
             ],
         }),
     )
