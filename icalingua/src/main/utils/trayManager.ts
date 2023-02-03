@@ -130,26 +130,38 @@ export const updateTrayMenu = async () => {
                 {
                     type: 'radio',
                     label: '在线',
+                    checked: getConfig().priority === 5,
+                    click: () => setPriority(5),
                 },
                 {
                     type: 'radio',
                     label: '离开',
+                    checked: getConfig().priority === 5,
+                    click: () => setPriority(5),
                 },
                 {
                     type: 'radio',
                     label: '隐身',
+                    checked: getConfig().priority === 5,
+                    click: () => setPriority(5),
                 },
                 {
                     type: 'radio',
                     label: '忙碌',
+                    checked: getConfig().priority === 5,
+                    click: () => setPriority(5),
                 },
                 {
                     type: 'radio',
                     label: 'Q我吧',
+                    checked: getConfig().priority === 5,
+                    click: () => setPriority(5),
                 },
                 {
                     type: 'radio',
                     label: '请勿打扰',
+                    checked: getConfig().priority === 5,
+                    click: () => setPriority(5),
                 },
             ],
         }),
